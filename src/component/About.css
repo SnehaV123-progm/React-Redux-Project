@@ -1,0 +1,55 @@
+/* src/component/About.css */
+
+.about {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+}
+
+.about-text, .contact-content {
+  max-width: 800px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.about-text h2,
+.contact-section h2 {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.contact-section {
+  background-color: #fff;
+  padding: 60px 0;
+  border-top: 1px solid #ddd;
+  scroll-margin-top: 100px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.contact-form button {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #45a049;
+}
