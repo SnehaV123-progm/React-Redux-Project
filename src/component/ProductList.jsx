@@ -12,7 +12,7 @@ import laptopSample from './images/office.jpg';
 import pouchSample from './images/mini.jpg';
 import suitSample from './images/wandr.jpg';
 import trekSample from './images/day.jpg';
-import slingSample from './images/everysling.jpg';
+import slingSample from './images/shoulder.jpg';
 
 import tote1 from './images/greentote.jpg';
 import backpack1 from './images/Backpack3.jpg';

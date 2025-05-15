@@ -5,21 +5,20 @@ import './Login.css';
 const Login = () => {
   const [isCreateAccount, setIsCreateAccount] = useState(false);
 
-  // Scroll to the Sign In section
-  const handleSignInClick = () => {
+  const handleSignInClick = (e) => {
+    e.preventDefault();
     setIsCreateAccount(false);
-    document.getElementById("sign-in-form").scrollIntoView({ behavior: "smooth" });
+    document.getElementById("sign-in-form")?.scrollIntoView({ behavior: "smooth" });
   };
 
-  // Scroll to the Create Account section
-  const handleCreateAccountClick = () => {
+  const handleCreateAccountClick = (e) => {
+    e.preventDefault();
     setIsCreateAccount(true);
-    document.getElementById("create-account-form").scrollIntoView({ behavior: "smooth" });
+    document.getElementById("create-account-form")?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
     <div className="login-container">
-      {/* Sign In Section */}
       {!isCreateAccount ? (
         <div id="sign-in-form" className="form-container">
           <h2>Sign In</h2>
@@ -28,15 +27,13 @@ const Login = () => {
             <input type="password" name="password" placeholder="Password" required />
             <button type="submit">Login</button>
           </form>
+          <p><a href="#">Forgot Password?</a></p>
           <p>
-            Don't have an account?{" "}
-            <a href="#" onClick={handleCreateAccountClick}>
-              Create a new account
-            </a>
+            Don't have an account?{' '}
+            <a href="#" onClick={handleCreateAccountClick}>Create a new account</a>
           </p>
         </div>
       ) : (
-        // Create Account Section
         <div id="create-account-form" className="form-container">
           <h2>Create an Account</h2>
           <form>
@@ -47,10 +44,8 @@ const Login = () => {
             <button type="submit">Create Account</button>
           </form>
           <p>
-            Already have an account?{" "}
-            <a href="#" onClick={handleSignInClick}>
-              Sign In
-            </a>
+            Already have an account?{' '}
+            <a href="#" onClick={handleSignInClick}>Sign In</a>
           </p>
         </div>
       )}

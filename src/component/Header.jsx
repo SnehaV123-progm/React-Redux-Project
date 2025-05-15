@@ -22,7 +22,8 @@ const Header = () => {
             <li><a href="/#shop">Shop</a></li>
             <li><Link to="/about">About</Link></li>
             <li><a href="/about#contact">Contact</a></li>
-            <li><Link to="/login">Sign-in</Link></li>
+           <li><Link to="/login">Sign-in</Link></li> 
+
           </ul>
         </nav>
       </div>

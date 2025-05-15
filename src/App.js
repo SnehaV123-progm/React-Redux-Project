@@ -7,8 +7,11 @@ import Hero from './component/Hero';
 import ProductList from './component/ProductList';
 import Cart from './component/Cart';
 import About from './component/About';
+import Login from './component/Login';
 import Footer from './component/Footer';
 import 'antd/dist/reset.css';
+import 'antd/es/style';
+
 
 function HomePage() {
   return (
@@ -27,6 +30,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<About />} />
+        <Route path="/login" element={<Login />} /> 
       </Routes>
       <Footer />
     </Router>
